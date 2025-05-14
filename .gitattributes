@@ -1,0 +1,4 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+/Users/adilmohammed/Documents/GitHub/AI-Recipe-Generator/recipe_generation_model.h5 filter=lfs diff=lfs merge=lfs -text
+/Users/adilmohammed/Desktop/AI[[:space:]]Recipe[[:space:]]Generator/recipe_generation_model.h5 filter=lfs diff=lfs merge=lfs -text

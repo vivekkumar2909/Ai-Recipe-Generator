@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Recipe Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>AI Recipe Generator</h1>
+        <form action="/generate_recipe" method="post">
+            <label for="user_input">Enter the first 2-3 words:</label>
+            <input type="text" id="user_input" name="user_input" required>
+            <button type="submit">Generate Recipe</button>
+        </form>
+        {% if generated_recipe %}
+        <div class="output">
+            <h2>Generated Recipe:</h2>
+            <p>{{ generated_recipe }}</p>
+        </div>
+    {% endif %}
+    
+    </div>
+</body>
+</html>
